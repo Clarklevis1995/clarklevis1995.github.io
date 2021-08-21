@@ -22,7 +22,7 @@
     <meta name="description" content="">
     <meta property="og:type" content="website">
 <meta property="og:title" content="Clarklevis&#39; tech home">
-<meta property="og:url" content="http://example.com/tags/LeetCode/index.html">
+<meta property="og:url" content="http://example.com/archives/2021/01/index.html">
 <meta property="og:site_name" content="Clarklevis&#39; tech home">
 <meta property="og:locale">
 <meta property="article:author" content="Clark Levis">
@@ -431,32 +431,35 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/2021/08/21/%E3%80%90LeetCode%E3%80%91-343-%E5%89%AA%E7%BB%B3%E5%AD%902-md/">
+            <a class="abstract-title" href="/2021/01/19/Leetcode(%E6%80%BB%E7%BB%93%E7%9A%84%E5%87%A0%E9%81%93%E7%BB%8F%E5%85%B8%E9%A2%98%E5%9E%8B)/">
                 
-                <span class="abstract-title-text">【LeetCode】 343.剪绳子2.md</span>
+                <span class="abstract-title-text">[Untitled Post]</span>
             </a>
             <div class="abstract-content">
-                
- 给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n都是整数，n&gt;1并且m&gt;1），每段绳子的长度记为 k[0],k[1]…k[m - 1] 。请问 k[0]k[1]…*k[m - 1] 可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。
+                LeetcodeArray摩尔投票
+题目背景：从一个数组中找到关键元素（关键元素的数量大于数组中元素总数的一半）
 
-答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。
-示例 1：
-1234567891011121314151617181920212223242526输入: 2输出: 1解释: 2 = 1 + 1, 1 × ...
+算法思路：
+
+维护一个majority，用来记录可能的关键元素
+
+维护一个count，用来记录投票数
+
+对数组中的元素进行一次循环，如果count == 0， 说明此时还没有确定关键元素，majority = num[i]， count++
+如果count != 0，说明，majority中已经有了备选方案，如果当前元素 == majority，count++； 否则count- -
+
+
+遍历完成后，
+
+如果count == 0， 说明没有关键元素，返回-1
+如果count...
             </div>
             <div class="abstract-post-meta">
                 <!-- date -->
                 <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/21</span>
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/19</span>
                 </div>
                 <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="LeetCode">LeetCode</a>
-    
-</div>
-
                 
             </div>
         </article>

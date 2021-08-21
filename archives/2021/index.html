@@ -530,6 +530,46 @@ Run server1$ hexo ...
         </article>
         <div class="index-post-divider"></div>
     
+        
+        
+        
+            
+        
+        <article class="index-post">
+            <a class="abstract-title" href="/2021/01/19/Leetcode(%E6%80%BB%E7%BB%93%E7%9A%84%E5%87%A0%E9%81%93%E7%BB%8F%E5%85%B8%E9%A2%98%E5%9E%8B)/">
+                
+                <span class="abstract-title-text">[Untitled Post]</span>
+            </a>
+            <div class="abstract-content">
+                LeetcodeArray摩尔投票
+题目背景：从一个数组中找到关键元素（关键元素的数量大于数组中元素总数的一半）
+
+算法思路：
+
+维护一个majority，用来记录可能的关键元素
+
+维护一个count，用来记录投票数
+
+对数组中的元素进行一次循环，如果count == 0， 说明此时还没有确定关键元素，majority = num[i]， count++
+如果count != 0，说明，majority中已经有了备选方案，如果当前元素 == majority，count++； 否则count- -
+
+
+遍历完成后，
+
+如果count == 0， 说明没有关键元素，返回-1
+如果count...
+            </div>
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/01/19</span>
+                </div>
+                <!-- tags -->
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
     <!-- paginator  -->
     
 </main>
@@ -652,7 +692,18 @@ Run server1$ hexo ...
         
         
         
+        
+        
+        
+        
+        
     
+        
+        
+        
+        
+        
+        
         
         
         
@@ -663,7 +714,7 @@ Run server1$ hexo ...
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 3
+        Total : 4
         </div>
         <!-- search  -->
         
@@ -693,6 +744,12 @@ Run server1$ hexo ...
         <li class="archive-post-item">
             <span class="archive-post-date">08/18</span>
             <a class="archive-post-title" href="/2021/08/18/hello-world/">Hello World</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">01/19</span>
+            <a class="archive-post-title" href="/2021/01/19/Leetcode(%E6%80%BB%E7%BB%93%E7%9A%84%E5%87%A0%E9%81%93%E7%BB%8F%E5%85%B8%E9%A2%98%E5%9E%8B)/">[Untitled Post]</a>
         </li>
     
     </div>
