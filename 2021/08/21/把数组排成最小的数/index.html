@@ -20,18 +20,23 @@
         <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
     
     <meta name="description" content="">
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Clarklevis&#39; tech home">
-<meta property="og:url" content="http://example.com/index.html">
+    <meta name="description" content="输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。  1234567示例 1:输入: [10,2]输出: &quot;102&quot;示例 2:输入: [3,30,34,5,9]输出: &quot;3033459&quot;  说明: 输出结果可能非常大，所以你需要返回一个字符串而不是整数 拼接起来的数字可能会有前导 0，最后结果不需要去掉前导 0">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【剑指offer】45 把数组排成最小的数">
+<meta property="og:url" content="http://example.com/2021/08/21/%E6%8A%8A%E6%95%B0%E7%BB%84%E6%8E%92%E6%88%90%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0/index.html">
 <meta property="og:site_name" content="Clarklevis&#39; tech home">
+<meta property="og:description" content="输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。  1234567示例 1:输入: [10,2]输出: &quot;102&quot;示例 2:输入: [3,30,34,5,9]输出: &quot;3033459&quot;  说明: 输出结果可能非常大，所以你需要返回一个字符串而不是整数 拼接起来的数字可能会有前导 0，最后结果不需要去掉前导 0">
 <meta property="og:locale">
+<meta property="article:published_time" content="2021-08-21T09:27:48.000Z">
+<meta property="article:modified_time" content="2021-08-21T09:29:42.160Z">
 <meta property="article:author" content="Clark Levis">
+<meta property="article:tag" content="剑指offer">
 <meta name="twitter:card" content="summary">
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <link rel="icon" href="/assets/roman-helmet.png">
     
-    <title>Clarklevis&#39; Workshop</title>
+    <title>【剑指offer】45 把数组排成最小的数 · Clarklevis&#39; Workshop</title>
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -219,10 +224,10 @@
         }
     </script>
     
-        <body class="home-body">
+        <body class="post-body">
     
         <!-- header -->
-        <header class="header header-mobile index-header">
+        <header class="header header-mobile">
     <!-- top read progress line -->
     <div class="header-element">
         <div class="read-progress"></div>
@@ -250,12 +255,23 @@
     </div>
     <!-- toggle banner for post layout -->
     
+        
+            <div class="banner">
+        
+            <div class="blog-title header-element">
+                <a href="/">Clarklevis&#39; Workshop.</a>
+            </div>
+            <div class="post-title header-element">
+                <a href="#" class="post-name">【剑指offer】45 把数组排成最小的数</a>
+            </div>
+        </div>
+    
 </header>
 
         <!-- dark mode -->
         <script src="/scripts/dark.js"></script>
         <!-- fixed footer -->
-        <footer class="footer-fixed index-footer-fixed">
+        <footer class="footer-fixed">
     <!-- back to top button -->
     <div class="footer-fixed-element">
         
@@ -285,7 +301,7 @@
     <!-- 主页  -->
     
         
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
     <div class="site-intro-img" style="background-image: url(https://source.unsplash.com/random)"></div>
@@ -294,8 +310,8 @@
         <h1 class="intro-title">
             <!-- 主页  -->
             
-                Clarklevis' Workshop.
-            <!-- 文章页  -->
+                【剑指offer】45 把数组排成最小的数
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -303,12 +319,54 @@
             <!-- 主页副标题  -->
             
                 
-                    it's better to burn out than to fade away
-                
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页 meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="剑指offer">剑指offer</a>
+    
+</div>
+
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">499</span>阅读时长: <span class="post-count reading-time">2 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <!-- 撰写日期 -->
+                    <span class="iconfont-archer post-intro-calander">&#xe676;</span>
+                    <span class="post-intro-time">2021/08/21</span>
+                    <!-- busuanzi -->
+                    
+                        <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                            <span class="iconfont-archer post-intro-busuanzi">&#xe602;</span>
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    
+                    <!-- 文章分享 -->
+                    <span class="share-wrapper">
+                        <span class="iconfont-archer share-icon">&#xe71d;</span>
+                        <span class="share-text">Share</span>
+                        <ul class="share-list">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -438,325 +496,79 @@
         
             <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
             <div class="container container-unloaded">
-                <main class="main index-page">
+                <main class="main post-page">
+    <article class="article-entry">
+        <blockquote>
+<p>输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。</p>
+</blockquote>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">示例 <span class="number">1</span>:</span><br><span class="line">输入: [<span class="number">10</span>,<span class="number">2</span>]</span><br><span class="line">输出: <span class="string">&quot;102&quot;</span></span><br><span class="line"></span><br><span class="line">示例 <span class="number">2</span>:</span><br><span class="line">输入: [<span class="number">3</span>,<span class="number">30</span>,<span class="number">34</span>,<span class="number">5</span>,<span class="number">9</span>]</span><br><span class="line">输出: <span class="string">&quot;3033459&quot;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>说明: 输出结果可能非常大，所以你需要返回一个字符串而不是整数 拼接起来的数字可能会有前导 0，最后结果不需要去掉前导 0</p>
+</blockquote>
+<p>这道题的目的：尽可能让高位数字为小数，单个位上的数字大的，尽可能放在低位上</p>
+<p>算法：使用排序的方式，按照字典序对字符串进行排序：</p>
+<blockquote>
+<p>字典序：比较两个字符串s1和s2：按照每个相同位置上的字符进行比较，如果位置1上的两个字符的字典序不同，则字典序小的排在前面，如果字典序相同，则继续比较下面的一位</p>
+</blockquote>
+<p>比如：</p>
+<figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">比较：<span class="number">102</span>和<span class="number">120</span></span><br><span class="line">第一位相同--&gt;比较第二位</span><br><span class="line">第二位：<span class="number">0</span>&lt;<span class="number">2</span></span><br><span class="line">所以：<span class="number">102</span> &lt; <span class="number">120</span></span><br><span class="line"></span><br><span class="line">-------------------</span><br><span class="line">比较：<span class="number">5</span>和<span class="number">123</span></span><br><span class="line">第一位：<span class="number">5</span>&gt;<span class="number">1</span></span><br><span class="line">所以：<span class="number">123</span> &lt; <span class="number">5</span></span><br></pre></td></tr></table></figure>
+<p><strong>解法1，使用小根堆的方式：</strong></p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> String <span class="title">minNumber</span><span class="params">(<span class="keyword">int</span>[] nums)</span> </span>&#123;</span><br><span class="line">        PriorityQueue&lt;String&gt; queue = <span class="keyword">new</span> PriorityQueue&lt;&gt;(<span class="keyword">new</span> Comparator&lt;String&gt;() &#123;</span><br><span class="line">            <span class="meta">@Override</span></span><br><span class="line">            <span class="function"><span class="keyword">public</span> <span class="keyword">int</span> <span class="title">compare</span><span class="params">(String s1, String s2)</span> </span>&#123;</span><br><span class="line">                <span class="keyword">return</span> (s1 + s2).compareTo(s2 + s1);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;);</span><br><span class="line"></span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i:nums) &#123;</span><br><span class="line">            queue.offer(<span class="string">&quot;&quot;</span> + i);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        StringBuilder result = <span class="keyword">new</span> StringBuilder();</span><br><span class="line"><span class="comment">//注意在取出元素时，不能直接遍历，而是要在取出的同时，让这个堆继续保持正确的字典序</span></span><br><span class="line">        <span class="keyword">while</span>(!queue.isEmpty())&#123;</span><br><span class="line">            result.append(queue.poll());</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> result.toString();</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>解法2，直接对数组进行排序：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> String <span class="title">minNumber</span><span class="params">(<span class="keyword">int</span>[] nums)</span></span>&#123;</span><br><span class="line">    String[] strs = <span class="keyword">new</span> String[nums.length];</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; nums.length; i++) &#123;</span><br><span class="line">        strs[i] = nums[i]+<span class="string">&quot;&quot;</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    Arrays.sort(strs, (x,y)-&gt;(x + y).compareTo(y + x));</span><br><span class="line">    StringBuilder result = <span class="keyword">new</span> StringBuilder();</span><br><span class="line">    <span class="keyword">for</span> (String s: strs) &#123;</span><br><span class="line">        result.append(s);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result.toString();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>本质上都是使用了排序（字典序）</p>
+</blockquote>
+
+    </article>
+    <!-- license -->
     
-        
-        
-        
+    <!-- paginator -->
+    <ul class="post-paginator">
+        <li class="next">
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2021/08/21/%E6%8A%8A%E6%95%B0%E7%BB%84%E6%8E%92%E6%88%90%E6%9C%80%E5%B0%8F%E7%9A%84%E6%95%B0/">
-                
-                <span class="abstract-title-text">【剑指offer】45 把数组排成最小的数</span>
-            </a>
-            <div class="abstract-content">
-                
-输入一个非负整数数组，把数组里所有数字拼接起来排成一个数，打印能拼接出的所有数字中最小的一个。
-
-1234567示例 1:输入: [10,2]输出: &quot;102&quot;示例 2:输入: [3,30,34,5,9]输出: &quot;3033459&quot;
-
-说明: 输出结果可能非常大，所以你需要返回一个字符串而不是整数 拼接起来的数字可能会有前导 0，最后结果不需要去掉前导 0
-
-这道题的目的：尽可能让高位数字为小数，单个位上的数字大的，尽可能放在低位上
-算法：使用排序的方式，按照字典序对字符串进行排序：
-
-字典序：比较两个字符串s1和s2：按照每个相同位置上的字符进行...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/21</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="剑指offer">剑指offer</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
+        </li>
+        <li class="previous">
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2021/08/21/%E3%80%90LeetCode%E3%80%9150.%20%E5%AE%9E%E7%8E%B0%E6%95%B0%E5%80%BC%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E6%96%B9/">
-                
-                <span class="abstract-title-text">【LeetCode】 数值的整数次方</span>
-            </a>
-            <div class="abstract-content">
-                实现 pow(x, n) ，即计算 x 的 n 次幂函数（即，xn）。不得使用库函数，同时不需要考虑大数问题。
-1234567输入：x = 2.00000, n = 10输出：1024.00000输入：x = 2.10000, n = 3输出：9.26100输入：x = 2.00000, n = -2输出：0.25000解释：2-2 = 1/22 = 1/4 = 0.25
-超时做法：简单的循环求解（递归会栈溢出）
-12345678910111213class Solution &#123;    public double myPow(double x, int n) &#123;   ...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/21</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="LeetCode">LeetCode</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2021/08/21/%E3%80%90LeetCode%E3%80%9150.%20%E5%AE%9E%E7%8E%B0%E6%95%B0%E5%80%BC%E7%9A%84%E6%95%B4%E6%95%B0%E6%AC%A1%E6%96%B9/" title="【LeetCode】 数值的整数次方">
+                    <div class="prevTitle">【LeetCode】 数值的整数次方</div>
+                </a>
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2021/08/21/Leetcode(%E6%80%BB%E7%BB%93%E7%9A%84%E5%87%A0%E9%81%93%E7%BB%8F%E5%85%B8%E9%A2%98%E5%9E%8B)/">
-                
-                <span class="abstract-title-text">【LeetCode】 LeetCode(重点题型总结)</span>
-            </a>
-            <div class="abstract-content">
-                LeetcodeArray摩尔投票
-题目背景：从一个数组中找到关键元素（关键元素的数量大于数组中元素总数的一半）
-
-算法思路：
-
-维护一个majority，用来记录可能的关键元素
-
-维护一个count，用来记录投票数
-
-对数组中的元素进行一次循环，如果count == 0， 说明此时还没有确定关键元素，majority = num[i]， count++
-如果count != 0，说明，majority中已经有了备选方案，如果当前元素 == majority，count++； 否则count- -
+        </li>
+    </ul>
+    <!-- comment -->
+     
+        <div class="post-comment">
+            <!-- 来必力 City 版安装代码 -->
 
 
-遍历完成后，
-如果count == 0， 说明没有关键元素，返回-1
-如果count ...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/21</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="LeetCode">LeetCode</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2021/08/21/%E3%80%90LeetCode%E3%80%91-343-%E5%89%AA%E7%BB%B3%E5%AD%902-md/">
-                
-                <span class="abstract-title-text">【LeetCode】 343.剪绳子2</span>
-            </a>
-            <div class="abstract-content">
-                
- 给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n都是整数，n&gt;1并且m&gt;1），每段绳子的长度记为 k[0],k[1]…k[m - 1] 。请问 k[0]k[1]…*k[m - 1] 可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。
 
-答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。
-示例 1：
-1234567891011121314151617181920212223242526输入: 2输出: 1解释: 2 = 1 + 1, 1 × ...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/21</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="LeetCode">LeetCode</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2021/08/18/Android%E4%B8%AD%E7%9A%84ViewModel-1/">
-                
-                <span class="abstract-title-text">Android中的ViewModel</span>
-            </a>
-            <div class="abstract-content">
-                
-ViewModel的一个重要作用就是帮助Activity分担一部分工作，专门用于存放与界面相关的数据，只要是界面上能看得到的数据，它的相关变量都应该存放在ViewModel中
 
-ViewModel的生命周期和Activity是不同的，在手机屏幕旋转的时候，Activity会被重新创建，但是ViewModel不会，只有Activity退出的时候，ViewModel才会和Activity一起销毁
-
-ViewModel的基本用法
- 通常比较好的编程规范是给每一个Activity和Fragment都创建一个ViewModel
-
-下面的程序可以做到在屏幕旋转的时候，界面上显示的数字是不变的创建一...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/18</span>
-                </div>
-                <!-- tags -->
-                
-                    <div class= abstract-tags >
-    
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags="Android">Android</a>
-    
-</div>
-
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
-    
-        
-        
-        
             
-        
-        <article class="index-post">
-            <a class="abstract-title" href="/2021/08/18/hello-world/">
-                
-                <span class="abstract-title-text">Hello World</span>
-            </a>
-            <div class="abstract-content">
-                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
-More info: Writing
-Run server1$ hexo s...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2021/08/18</span>
-                </div>
-                <!-- tags -->
-                
-            </div>
-        </article>
-        <div class="index-post-divider"></div>
+
+            <!-- utteranc评论 -->
+
+
+            <!-- partial('_partial/comment/changyan') -->
+            <!--PC版-->
+
+
+            
+            
+
+        </div>
     
-    <!-- paginator  -->
+    <!-- timeliness note -->
+    <!-- idea from: https://hexo.fluid-dev.com/posts/hexo-injector/#%E6%96%87%E7%AB%A0%E6%97%B6%E6%95%88%E6%80%A7%E6%8F%90%E7%A4%BA -->
+    
+    <!-- Mathjax -->
     
 </main>
 
                 <!-- profile -->
-                
-                    <div class="profile">
-    <img class="profile-avatar" alt="avatar" src= /avatar/clark.png />
-    <div class="profile-name">Clark</div>
-    
-        <div class="profile-signature">
-            Now I see you
-        </div>
-    
-    
-        <div class="profile-social">
-            
-    
-        
-            
-                <a href="mailto:lichaofan_sunny@foxmail.com" class="iconfont-archer email" title=email ></a>
-            
-        
-    
-        
-            
-                <a href="//github.com/Clarklevis1995" class="iconfont-archer github" target="_blank" title=github></a>
-            
-        
-    
-        
-            
-                <span class="iconfont-archer wechat" title=wechat>
-                    
-                    <img class="profile-qr" src="/assets/example_qr.png" />
-                </span>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-            
-                <a href="https://space.bilibili.com/12402979" class="iconfont-archer bilibili" target="_blank" title=bilibili></a>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-
-
-        </div>
-    
-    
-    
-        <div class="about-me">
-            <a href="/about">ABOUT ME</a>
-        </div>
-    
-</div>
-
                 
             </div>
             <footer class="footer footer-unloaded">
@@ -847,6 +659,23 @@ Run server1$ hexo s...
 
         </div>
         <!-- toc -->
+        
+            <div class="toc-wrapper" style=
+
+
+
+
+
+
+
+    top:50vh;
+
+>
+                <div class="toc-catalog">
+                    <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+                </div>
+                
+            </div>
         
         <!-- sidebar -->
         <div class="sidebar sidebar-hide">
@@ -1032,7 +861,16 @@ Run server1$ hexo s...
         
         <!-- async load share.js -->
         
+            <script src="/scripts/share.js" async></script>    
+        
         <!-- mermaid -->
+        
+            <script src='https://cdn.jsdelivr.net/npm/mermaid@8.11.0/dist/mermaid.min.js'></script>
+            <script>
+                if (window.mermaid) {
+                    mermaid.initialize({theme: 'dark'});
+                }
+            </script>
         
     </body>
 </html>
